@@ -15,7 +15,7 @@ cgitb.enable()
 form = cgi.FieldStorage()
 text = form.getvalue('content')
 #DB接続
-con = psycopg2.connect("host=localhost dbname=s1922033 user=s1922033 password=R1wguNbI")
+con = psycopg2.connect("{secret}")
 
 print('Content-type: text/html')
 print('')

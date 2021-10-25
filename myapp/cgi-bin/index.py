@@ -13,7 +13,7 @@ import psycopg2
 import datetime
 cgitb.enable()
 form = cgi.FieldStorage()
-con = psycopg2.connect("host=localhost dbname=s1922033 user=s1922033 password=R1wguNbI")
+con = psycopg2.connect("{secret}")
 
 print('Content-type: text/html')
 print()
